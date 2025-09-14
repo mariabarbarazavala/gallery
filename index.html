@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: #fff;
     }
 
@@ -15,99 +15,101 @@
     .banner {
       background: #000;
       height: 250px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
       position: relative;
     }
 
-    /* Foto de perfil centrada */
+    /* Foto de perfil estilo Twitter/X */
     .profile-pic {
       width: 140px;
       height: 140px;
       border-radius: 50%;
       object-fit: cover;
+      border: 4px solid #fff;
       position: absolute;
-      bottom: -70px; /* mitad del alto de la foto */
+      left: 20px;
+      bottom: -70px;
     }
 
-    /* Contenedor de nombre y subtítulo */
+    /* Contenedor de texto debajo de la foto */
     .text-container {
-      margin-top: 90px; /* espacio después de la foto */
-      text-align: center;
-      line-height: 1; /* interlineado */
+      margin-top: 90px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     .title {
-      font-family: 'Anton', sans-serif;
       font-size: 28px;
       font-weight: bold;
       color: #111;
+      margin: 0;
     }
 
     .subtitle {
-      font-family: 'UnifrakturCook', cursive;
       font-size: 20px;
       color: #333;
+      margin: 5px 0 0 0;
     }
 
-    .collections {
-      font-family: 'Poppins', sans-serif;
+    /* Botones estilo BioSite */
+    .links {
+      max-width: 400px;
+      margin: 40px 20px 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .link-btn {
+      background: #000;
+      color: #fff;
       font-size: 16px;
       font-weight: bold;
-      color: #111;
-      margin-top: 8px;
-    }
-
-    /* Galería */
-    .gallery {
-      max-width: 900px;
-      margin: 30px auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      padding: 0 15px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      display: block;
+      text-decoration: none;
+      text-align: center;
+      padding: 14px;
       border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: 0.3s;
+      font-family: 'Poppins', sans-serif;
     }
 
-    @media(min-width: 600px) {
-      .gallery {
-        grid-template-columns: 1fr 1fr;
-      }
+    .link-btn:hover {
+      opacity: 0.8;
     }
   </style>
-  <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=UnifrakturCook:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Banner con foto de perfil -->
+  <!-- Banner con foto tipo Twitter/X -->
   <div class="banner">
     <img class="profile-pic" src="https://i.postimg.cc/gj5sqnKL/Mar-a-Barbara-Zavala-20250822-131532-0001.png" alt="María Bárbara Zavala">
   </div>
 
-  <!-- Nombre y subtítulo -->
+  <!-- Nombre y subtítulo debajo de la foto -->
   <div class="text-container">
     <h1 class="title">María Bárbara Zavala</h1>
-    <h2 class="subtitle">Bárbara's Kingdom • Queen B</h2>
-    <p class="collections">Mis colecciones | Modelos IA</p>
+    <h2 class="subtitle">Mi Biblioteca y Academia Universal</h2>
   </div>
 
-  <!-- Galería de fotos -->
-  <div class="gallery">
-    <img src="https://i.postimg.cc/26GSgWqM/Perfect365-1755743654962.jpg" alt="Foto 1">
-    <img src="https://i.postimg.cc/7Z9g4KCY/file-000000009e0061fd927b4a17d4c6257e.png" alt="Foto 2">
-    <img src="https://i.postimg.cc/L891xjyd/file-0000000082a061f88985b1c8441ee273-1.png" alt="Foto 3">
-    <img src="https://i.postimg.cc/6pp8rt3t/file-000000003e1061f5887cb3169d863c9e.png" alt="Foto 4">
-    <img src="https://i.postimg.cc/wT6MzgDL/file-000000004b2861f899b180afb3d20202.png" alt="Foto 5">
-    <img src="https://i.postimg.cc/MpQhrjXD/file-00000000563461f7a39a8291a5945be1.png" alt="Foto 6">
-    <img src="https://i.postimg.cc/262JBQXz/file-000000003fa4622f8b41c8acdd087f9b.png" alt="Foto 7">
+  <!-- Links -->
+  <div class="links">
+    <!-- Nuevo botón Noir Goetia -->
+    <a class="link-btn" href="https://drive.google.com/drive/folders/1LrXlzBjddYau3DAwDVWlmbfNYuT64VoS" target="_blank">
+      Noir Goetia
+    </a>
+
+    <!-- Google Drive en Poppins -->
+    <a class="link-btn" href="https://drive.google.com/drive/folders/1Oe6YzMujbLeSJNP5YKBk6ZkjVIzvS6Jx" target="_blank">
+      Noesis Academy
+    </a>
   </div>
 
 </body>
